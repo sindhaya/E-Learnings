@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  margin: 0;
+  font-family: "muli", sans-serif;
+  background: rgb(254, 255, 255);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.navbar {
+  background-color: rgb(168, 238, 215);
+}
+.navbar-brand {
+  font-size: 1.9rem;
+}
+.navbar a {
+  /*font-size: 1.2rem;
+  */text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 6px;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius:20px;
+  transition: 0.5s;
+  color: hsl(199, 84%, 48%);
+  border: 2px solid darkcyan;
+  text-decoration: none;
+  justify-content:space-between ;
+}
+.menu_active {
+  /* font-weight: bold; */
+  border-bottom: 1.5px solid rgb(58, 5, 5);
+}
+.navbar a:hover {
+  color: rgb(229, 233, 240) !important;
+  background-color: deepskyblue;
+}
+
+@media (max-width: 990px) {
+  .navbar-brand {
+    font-size: 1.9rem !important;
+    color: chartreuse;
+  }
+  .menu_active {
+    border-bottom: none;
+  }
+  .mt-2 {
+    background-color: aqua;
+  }
+}
+.brand-name {
+  color: rgb(5, 88, 64);
+}
+#header {
+  width: 100%;
+  height: 70vh;
+  margin-top:60px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgb(26, 2, 2);
+}
+
+#header h2 {
+  color: darkolivegreen;
+  font-size: 24px;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: hsl(199, 84%, 48%);
+  border: 2px solid darkcyan;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background-color: deepskyblue;
+  color: aliceblue;
+}
+
+.header-img {
+  text-align: right;
+}
+
+#header .img-fluid-animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(20px);
+}
+  100% {
+    transform: translateY(-20px);
+}
+}
+
+@keyframes up-down{
+  0%{
+    transform:translateY(20px);
+}
+100%{
+  transform: translateY(-20px);
+}
+}
